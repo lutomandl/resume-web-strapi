@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "homes",
+  "collectionName": "headers",
   "info": {
-    "singularName": "home",
-    "pluralName": "homes",
-    "displayName": "Home"
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
   },
   "options": {
     "draftAndPublish": true
@@ -24,7 +24,7 @@
       "type": "string",
       "required": true
     },
-    "title": {
+    "profession": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -33,7 +33,7 @@
       "type": "string",
       "required": true
     },
-    "location": {
+    "residence": {
       "pluginOptions": {
         "i18n": {
           "localized": true

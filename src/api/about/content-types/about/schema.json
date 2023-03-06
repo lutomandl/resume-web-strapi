@@ -16,16 +16,6 @@
     }
   },
   "attributes": {
-    "heading": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string",
-      "required": true,
-      "default": "ABOUT"
-    },
     "firstParagraph": {
       "pluginOptions": {
         "i18n": {
@@ -54,17 +44,31 @@
       "required": true
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "sectionId": {
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       },
+      "type": "uid",
       "required": true
+    },
+    "heading": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::heading.heading"
     }
   }
 }
